@@ -3,23 +3,22 @@
 <html lang="en">
 
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1">  <!-- Document responsive across devices. -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">  <!-- to make html responsive across devices. -->
     <meta charset="utf-8"> <!--for encoding properly in any browser,UTF-8 - Character encoding for Unicode. The charset attribute specifies the character encoding for the HTML document-->
-    <title>My Portfolio</title> <!--title that appears in the browser-->
-    <link rel="stylesheet" href="./assets/css/style.css"> <!--linking css-->
-    <link rel="stylesheet" href="./assets/css/reset.css"> 
+    <title>Basic Portfolio</title> <!--title that appears in the browser-->
+    <link rel="stylesheet" href="./assets/css/reset.css"> <!--external CSS should be 1st-->
+    <link rel="stylesheet" href="./assets/css/style.css"> <!--linking css--> 
+
 </head>
 
 <body>
     <header>
         <div class="container">
-            <div class="name">
-                <div class="logo">Neha Reddy</div>
-            </div>
+            <h1>Neha Reddy</h1>
 
             <nav>
                 <ul>
-                    <li><a href="#" class="active">About</a></li> <!--HTML links are defined with the <a> tagThe link's destination is specified in the href attribute-->
+                    <li><a href="index.html">About</a></li> <!--HTML links are defined with the <a> tagThe link's destination is specified in the href attribute-->
                     <li><a href="portfolio.html">Portfolio</a></li>
                     <li><a href="contact.html">Contact</a></li>	
                 </ul>
@@ -27,35 +26,27 @@
         </div>
     </header>
 
-    
-    <div class="content">
-            <div class="main">
-                <h1 class="page-title">About Me</h1>
-           
-            <p>
-            <img class="headshot" src="./assets/images/IMG_8869.JPG" alt="Neha Photo" width="270" height="200">I am Neha. I am currently enrolled in SMU Coding bootcamp to learn coding and be certified as a full stack Engineer. 
-            </p>
-            <p>
-            I like to learn new things, and the main reason I have joined this program is for better career propects.
-            </p>
-            <p>
+        <div class="container">
+            <section id="pagecontent">
+            <h2>About Me</h2>
+            <p><img class="inline-img" src="./assets/images/IMG_8869.JPG" alt="Neha Photo" width="270" height="200"/>I am Neha. I am currently enrolled in SMU Coding bootcamp to learn coding and be certified as a full stack Engineer. I like to learn new things, and the main reason I have joined this program is for better career propects.
+    </p>
+    <p>
             Learning to code helps in coming up with better Business requirments and better understand Products.Currently I work as a Project manager managing projects belonging to the digital portfolio but i am looking for better career prospects as technical PM or a Product owner as I like to research about new digital projects and features.
             I am also passionate about finding and resolving bugs.
-            </p>
-            </div> <!--main-->
+    </p>
+    <p>
+        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+    </p>
 
-    </div> <!--content-->
+            </section>
+        </div>
 
+    <div class="clearfix"></div> <!--Elements after a floating element will flow around it.-->
+    
     <footer>
 		&copy; Copyright 2018 Neha Reddy
     </footer>
-    
+
 </body>
 </html>
-
-
-
-
-
-
-
